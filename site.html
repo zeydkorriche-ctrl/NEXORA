@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEXORA builds modern websites for businesses.">
+    <title>NEXORA | Web Studio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0b1020;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: min(1100px, 90%);
+            margin: auto;
+        }
+
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid #202940;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #67e8f9;
+            font-size: 26px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        nav ul a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        nav ul a:hover {
+            color: #67e8f9;
+        }
+
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .tag {
+            color: #67e8f9;
+            font-size: 13px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        h1 {
+            max-width: 800px;
+            margin: 22px auto;
+            font-size: clamp(36px, 6vw, 68px);
+            line-height: 1.1;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: #b8c2d9;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 24px;
+            background: #38bdf8;
+            color: #07111f;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+        }
+
+        .services {
+            padding: 40px 0 90px;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            padding: 30px;
+            background: #171f35;
+            border: 1px solid #28334d;
+            border-radius: 16px;
+        }
+
+        .card .icon {
+            font-size: 30px;
+        }
+
+        .card h3 {
+            margin: 12px 0;
+            color: #67e8f9;
+        }
+
+        .card p {
+            color: #b8c2d9;
+        }
+
+        .contact {
+            padding: 70px 20px;
+            text-align: center;
+            background: #111a30;
+            border-radius: 20px;
+            margin-bottom: 70px;
+        }
+
+        .contact p {
+            margin: 15px 0 25px;
+            color: #b8c2d9;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            color: #8390aa;
+            border-top: 1px solid #202940;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 16px;
+            }
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">NEXORA.</a>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <span class="tag">WE BUILD FOR THE FUTURE</span>
+
+            <h1>Your business deserves a better website.</h1>
+
+            <p>
+                We create modern, fast and beautiful websites
+                to help businesses grow online.
+            </p>
+
+            <a href="#contact" class="button">
+                Let's work together ↗
+            </a>
+        </section>
+
+        <section class="services container" id="services">
+            <h2 class="section-title">What we do</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>
+                        Responsive websites designed to look
+                        great on computers and phones.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">⚡</div>
+                    <h3>Performance</h3>
+                    <p>
+                        Simple, fast and user-friendly
+                        experiences for your customers.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact container" id="contact">
+            <h2>Have a project in mind?</h2>
+
+            <p>
+                Let's talk about how a website can help
+                your business grow.
+            </p>
+
+            <a class="button"
+               href="mailto:hello@example.com?subject=Website%20project">
+                Contact us
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 NEXORA. Built with HTML and CSS.</p>
+    </footer>
+</body>
+</html>
